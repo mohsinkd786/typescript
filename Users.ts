@@ -1,14 +1,3 @@
-const usrs =[
-    {
-        id: 1,
-        name: 'Xyz'
-    },{
-        id: 2,
-        name: 'Abc'  
-        ,address: 'asasyaus'  
-    }
-]
-
 // interfaces
 interface User{
     id:number,
@@ -16,6 +5,7 @@ interface User{
     email:string
 }
 
+// array of type user
 let users:User[] 
 users = [
     {
