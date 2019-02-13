@@ -49,5 +49,5 @@ let __child:UnEmployed = {
 }
 
 let __parent:User = __child
-
+// __parent.name
 console.log(emp.getNameAndEmail())
