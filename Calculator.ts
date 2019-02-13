@@ -11,23 +11,23 @@ const _process = (_first:number,_next:number,_action:IOperation)=>{
  
 const _calculate = (_first:number,_next:number,_action:string)=>{
     switch(_action){
-        case 'ADD':
+        case 'SUM':
             // #### ADDITION
             const _addObj = new add.Operation.Addition()
-            console.log(`SUM IS ${_process(_first,_next,_addObj)}`)
+            console.log(`${_action} IS ${_process(_first,_next,_addObj)}`)
             break
-        case 'SUB':
+        case 'DIFF':
             // #### DIFFERENCE
             const _diffObj = new sub.Proc.Subtract()
-            console.log(`DIFF IS ${_process(_first,_next,_diffObj)}`)
+            console.log(`${_action} IS ${_process(_first,_next,_diffObj)}`)
             break
-        case 'MUL':
+        case 'PRODUCT':
             // #### PRODUCT
             const _mulObj = new Multiply()
-            console.log(`PRODUCT IS ${_process(_first,_next,_mulObj)}`)
+            console.log(`${_action} IS ${_process(_first,_next,_mulObj)}`)
             break
         default:
-            console.log('Please choose from ADD, SUB & MUL')
+            console.log('Please choose from SUM, DIFF & PRODUCT')
         }
 }
 
