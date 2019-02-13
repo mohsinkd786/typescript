@@ -1,20 +1,11 @@
-import * as add from "./Add"
-import sub = require('./Sub')
-import { Multiply } from './Multiply'
 import { IOperation } from "./Operation"
-
-class ACTIONS{
-    static _SUM:any = new add.Operation.Addition()
-    static _DIFF:any = new sub.Proc.Subtract()
-    static _PRODUCT:any = new Multiply()
-}
+const ACTIONS = require('./_Actions').ACTIONS
 
 const _process = (_first:number,_next:number,_action:IOperation)=>{
     return _action._operate(_first,_next)
 }
 
 // Actions
- 
 const _calculate = (_first:number,_next:number,_action:string)=>{
     switch(_action){
         case 'SUM':
