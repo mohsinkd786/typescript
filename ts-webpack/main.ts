@@ -1,0 +1,1 @@
+console.log('Hello I shall be build by Web pack');
