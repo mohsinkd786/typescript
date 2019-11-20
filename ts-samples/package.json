@@ -1,0 +1,14 @@
+{
+  "name": "ts-samples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "start": "tsc && node out/out.js"
+  },
+  "author": "Mohsin Khursheed",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "grunt-ts-sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "build" : "grunt ts",
+    "start": "node src/hello.ts"
+  },
+  "author": "Mohsin Khursheed",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "grunt": "^1.0.4",
+    "grunt-ts": "^6.0.0-beta.22"
+  }
+}
